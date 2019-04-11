@@ -20,7 +20,7 @@ class HogeTest < ActiveSupport::TestCase
   end
 
   # no validation
-  test "hoge_count_no_validation" do
+  test "load_no_validation" do
     FixtureParts.load("test/fixture_parts/hoge_test/hoges.yml", valid: false)
   end
 end
