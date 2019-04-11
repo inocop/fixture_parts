@@ -26,7 +26,7 @@ class HogeTest < ActiveSupport::TestCase
 end
 ```
 
-hoges.yml
+#{Rails.root}/test/fixture_parts/hoge_test/hoges.yml
 ```yml
 one:
   id: 1
