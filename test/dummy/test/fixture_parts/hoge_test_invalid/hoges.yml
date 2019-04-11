@@ -1,0 +1,5 @@
+one:
+  id: 1
+  integer: 1
+  boolean: true
+  date: 2019-04-12

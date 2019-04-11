@@ -1,0 +1,2 @@
+class Fuga < ApplicationRecord
+end

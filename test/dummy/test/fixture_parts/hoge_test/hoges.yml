@@ -1,0 +1,14 @@
+one:
+  id: 1
+  integer: 1
+  string: one
+  boolean: true
+  date: 2019-04-12
+
+two: 
+  id: 2
+  integer: 2
+  string: two
+  boolean: false
+  date: 2020-04-12
+
