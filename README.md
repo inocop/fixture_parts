@@ -2,7 +2,7 @@
 FixtureParts registers data in DB for each test.
 
 ## Usage
-How to use my plugin.
+How to use.
 
 ```ruby
 class HogeTest < ActiveSupport::TestCase
@@ -14,14 +14,14 @@ class HogeTest < ActiveSupport::TestCase
 
   # Directory specification
   test "hoge_fuga_count" do
-    FixtureParts.load_dir("test/fixture_parts/hoges_test")
+    FixtureParts.load_dir("test/fixture_parts/hoge_test")
     assert_equal(1, Hoge.all.count)
     assert_equal(1, Fuga.all.count)
   end
 
   # no validation
-  test "hoge_count" do
-    FixtureParts.load("test/fixture_parts/hoges_test_invalid/hoges.yml", valid: false)
+  test "hoge_count_no_validation" do
+    FixtureParts.load("test/fixture_parts/hoge_test/hoges.yml", valid: false)
   end
 end
 ```
