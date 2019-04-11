@@ -4,10 +4,9 @@ module FixtureParts
 
   def self.load(parts_yml, valid: true)
     file = Rails.root.join(parts_yml)
-    parts_hash = YAML.load(ERB.new(file.read).result)
-
     model_class = Object.const_get(file.basename(".*").to_s.classify)
-    parts_hash.each do |key, values|
+
+    YAML.load(ERB.new(file.read).result).each do |key, values|
       model = model_class.new(values)
       model.id = values["id"] if values["id"].present?
 
@@ -20,7 +19,7 @@ module FixtureParts
   end
 
   def self.load_dir(parts_dir, valid: true)
-    Dir.glob(Rails.root.join(parts_dir, "*.yml")).each do |parts_yml|
+    Dir.glob(Rails.root.join(parts_dir, "*.{yml,yaml}")).each do |parts_yml|
       load(parts_yml, valid: valid)
     end
   end
