@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.version     = FixtureParts::VERSION
   spec.authors     = ["inocof"]
   spec.email       = [""]
-  spec.homepage    = ""
+  spec.homepage    = "https://github.com/inocop/fixture_parts"
   spec.summary     = "Load fixture separately."
   spec.description = "FixtureParts registers data in DB for each test."
   spec.license     = "MIT"
