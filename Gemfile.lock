@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     fixture_parts (0.1.0)
-      rails (~> 5.2.3)
+      rails (>= 3.2)
 
 GEM
   remote: https://rubygems.org/
